@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+# class QtSpider(scrapy.Spider):
+#     name = 'xima'
+#     allowed_domains = ['www.ximalaya.com']
+#
+#     # 直接通过数字爬取当前页面数据，当然也可以通过查看方式，
+#     start_urls = ['https://www.ximalaya.com/youshengshu/updates/p1/',]
+#     def parse(self, response):
+#         """
+#             第一次进到评书种类，需要再次进入到具体的某一本书，因此需要再次发送请求
+#         """
+#         item = XiMaItem()
+#         #
+#         # item["file_name"]=file_name
+#         item["music_name"] =[ "中国",'日本']
+#         item['music_urls'] = [
+#             'https://fdfs.xmcdn.com/group67/M0B/B5/65/wKgMd13vg_OyslUlAC4Vpq_jYi8944.m4a',
+#             "https://fdfs.xmcdn.com/group54/M03/BB/45/wKgLclw1qSLSvFAuAMuKcYVZ2O8073.m4a"
+#         ]
+#         yield item
+
+"""
+result=[
+    (
+        True,
+        {
+            'url': 'https://fdfs.xmcdn.com/group67/M0B/B5/65/wKgMd13vg_OyslUlAC4Vpq_jYi8944.m4a',
+            'path': 'C:\\Users\\ABC\\Desktop\\test\\music\\wKgMd13vg_OyslUlAC4Vpq_jYi8944.m4a',
+            'checksum': '25351f0caf006763c3b39be1f972a8a1'}
+    ),
+    (
+        True,
+        {
+            'url': 'https://fdfs.xmcdn.com/group54/M03/BB/45/wKgLclw1qSLSvFAuAMuKcYVZ2O8073.m4a',
+            'path': 'C:\\Users\\ABC\\Desktop\\test\\music\\wKgLclw1qSLSvFAuAMuKcYVZ2O8073.m4a',
+            'checksum': 'f1db8bb87fae1391e6de8914d3a290f7'}
+    )
+]
+"""
